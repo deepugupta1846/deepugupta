@@ -1,0 +1,110 @@
+<!doctype>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Webpage</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<style >
+		#name{
+			
+			margin-top: 200px;
+			}
+
+		#me{
+
+		}
+	</style>
+	<script>
+		function ofcourse()
+		{
+			var a=document.getElementById("demo");
+			a.innerHTML="Awesome, so you can contact me.<a href=https://www.google.com/> click here</a>"
+           
+		}
+		function nope()
+		{
+			var a=document.getElementById("demo");
+			a.innerHTML="Opps! It seems i need to improve send your suggestion <a href=https://google.com>here</a>."
+           
+		}
+	</script>
+</head>
+<body>
+
+<?php
+    include 'navbar.html';
+?>   
+
+
+  <div class="container mt-5 " style="height: 300px;">
+    <h1 class="display-4 " id="name">Deepu Gupta</h1>
+    <div class="m-5">
+    <button class="btn btn-outline-success font-weight-bold shadow-lg" ><a href="#contact" class="text-success">Contact</a> </button>
+    <button class="btn btn-outline-success font-weight-bold shadow-lg"><a href="#myworks " class="text-success"> Works </a></button>
+</div>
+    </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="mypic4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="mypic6.jpg" class="d-block w-100" alt="...">
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="container" id="myworks">
+  <div class="jumbotron mt-5 " style="height: 600px;">
+    <h1 style="margin-top: 200px; text-align: center;">My Works</h1>
+    <p class="about-content-1 m-5"> ###TODO: later </p>
+        
+  </div>
+</div>
+<div class="container" id="about">
+  <div class="jumbotron mt-5 " style="height: 600px;">
+    <h1 style="margin-top: 200px; text-align: center;">About</h1>
+    <p class="about-content-1"> currently persuing <span>BCA</span> from
+        <span>Gaya college Gaya ,BIHAR (2018-2021)</span>. I certainly don't know everything about
+        webDevelopment but I am passionate about learning webDevelopment.</p>
+  </div>
+</div>
+<div class="container" id="contact">
+	<div class="jumbotron mt-5 " style="height: 500px;">
+    <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text" id="demo">Hey did you liked this Portfolio and want to Contact</p>
+    <button class="btn btn-outline-success font-weight-bold shadow-lg" onclick="ofcourse();">Of Course!</a> </button>
+   <button class="btn btn-outline-success font-weight-bold shadow-lg" onclick="nope();">Nope!</a> </button>
+   
+  </div>
+  </div>
+ 
+<div class="row">
+	<div class="col-md-4 mb-2 ml-3">
+		<a href="https://www.facebook.com/profile.php?id=100013813997448" class="navbar-brand p-2"><img src="fb.png"  width="40" height="40"></a>
+		<a href="https://www.instagram.com/deep_46266/" class="navbar-brand p-2"><img src="insta.png"  width="40" height="40"></a>
+		<a href="https://twitter.com/Deepuku28317770" class="navbar-brand p-2"><img src="twit.png"  width="40" height="40"></a>
+		<a href="https://www.youtube.com/channel/UC85cWoVkr7piX45MXx5Ne9g" class="navbar-brand p-2"><img src="yt.png"  width="40" height="40"></a>
+	</div>
+</div>
+</body>
+
+</html>
